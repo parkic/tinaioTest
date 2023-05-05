@@ -1,0 +1,18 @@
+{% if page.layout != 'concept' %}
+  {% assign concepts = site.pages | where:'layout','single_concept' %}
+  {% assign pages = concepts | sort: "custom_order" %}
+{% endif %}
+
+<header class="flex items-center justify-between container mx-auto">
+  <div class="logo">
+    Logo
+  </div>
+
+  <nav>
+    <ul>
+      <li>page 1</li>
+      <li>page 2</li>
+      <li>page 3</li>
+    </ul>
+  </nav>
+</header>
